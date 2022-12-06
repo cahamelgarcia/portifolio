@@ -1,0 +1,140 @@
+body{
+  background-color: #16e097;
+}
+.Campo{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left:0;
+  margin: auto;
+  width: 1280px;
+  height: 720px;
+  background-color: #19ffab;
+}
+.faixa1,.faixa2, .faixa3, .faixa4, .faixa5{
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background-color: #73ffcc;
+}
+.faixa2{
+  left: 300px;
+  }
+.faixa3{
+  left: 565px;
+  }
+  .faixa4{
+  right: 300px;
+  }
+  .faixa5{
+  right: 0px;
+}
+.marcacao1{
+  position: absolute;
+  right: 0;
+  left:0;
+  margin: auto;
+  width: 20px;
+  height: 100%;
+  background-color: #d6fff0;
+
+}
+.circulo1{
+  position: absolute;
+  right: 0;
+  left:0;
+  top:0;
+  bottom: 0;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-color: #d6fff0;
+  border-radius: 50%;
+}
+.circulo2{
+  position: absolute;
+  right: 0;
+  left:0;
+  top:0;
+  bottom: 0;
+  margin: auto;
+  width: 260px;
+  height: 260px;
+  background-color: #19ffab;
+  border-radius: 50%;
+}
+.Retangulo_esq1{
+  position: absolute;
+  left:0;
+  top:0;
+  bottom: 0;
+  margin: auto;
+  width: 200px;
+  height: 300px;
+  background-color: #d6fff0;
+}
+
+.Retangulo_esq2{
+  position: absolute;
+  left:0;
+  top:0;
+  bottom: 0;
+  margin: auto;
+  width: 180px;
+  height: 260px;
+  background-color: #19ffab;
+}
+.Retangulo_dir1{
+  position: absolute;
+  right: 0;
+  top:0;
+  bottom: 0;
+  margin: auto;
+  width: 200px;
+  height: 300px;
+  background-color: #d6fff0;
+}
+
+.Retangulo_dir2{
+  position: absolute;
+  right: 0;
+  top:0;
+  bottom: 0;
+  margin: auto;
+  width: 180px;
+  height: 260px;
+  background-color: #19ffab;
+}
+.bola{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top:0;
+  bottom: 0;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius:50%;
+}
+.jogador_1{
+  position: absolute;
+  left: 30px;
+  top:0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 150px;
+  background-color: white;
+  }
+  .jogador_2{
+    position: absolute;
+    right: 30px;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    width: 20px;
+    height: 150px;
+    background-color: white;
+    }

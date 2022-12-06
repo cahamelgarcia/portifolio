@@ -1,0 +1,288 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+Body{
+     font-family: "Montserrat", sans-serif;
+     background-color: black;
+   }
+
+
+/*Configuração do navegador */
+
+.navegador{
+    background-color: white;
+    color:black;
+    height:50px;
+}
+.navegador ul{
+    margin-top: 0;
+    list-style: none;
+    text-align: right;
+    height:50px;
+}
+.navegador li{
+    display: inline-block;
+    padding-right: 30px;
+    padding-left: 30px;
+    line-height:50px;
+}
+
+/*Configuração do link */
+.navegador a:link {
+    color:black;
+    height:50px;
+    text-decoration: none;
+    }
+/*Link visitado*/
+.navegador a:visited {
+    color:black;
+    height:50px;
+    text-decoration: none;
+    }
+/*Ao passar o mouse por cima*/
+.navegador a:hover {
+    color:#f27629;
+    height:50px;
+    text-decoration: none;
+     }
+/*Link ativo/selecionado*/
+.navegador a:active {
+    color:black;
+    height:50px;
+    text-decoration: none;
+    }
+
+
+/*Formatação das margens da página curriculo */
+
+.main{
+    padding: 80px 180px 80px 100px;
+}
+.main img {
+    float: left;
+    width: 400px;
+    margin-right: 20px;
+}
+.main h1{
+    color : white;
+    font-weight: normal;
+    }
+
+.main h2{
+    color: white;
+    font-size:16px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 40px;
+    }
+
+.main h3{
+    color: #f27629;
+    font-size:12px;
+    text-transform: uppercase;
+    }
+
+.main p{
+    color:white;
+    font-size:18px;
+    font-weight:100;
+    line-height: 24px;
+    text-align: justify;
+    }
+
+
+
+
+/*Configuração da página index.html */
+.capa{
+        height: 650px;
+  }
+.capa div{
+    display: inline-block;
+}
+.capaimagem {
+    width: 40%;
+    text-align: center;
+    margin-top: 100px;
+}
+.capaimagem img{
+    border-radius: 400px;
+
+}
+.capatexto{
+    vertical-align:150px;
+     width: 59%;
+     color:white;
+}
+.capatexto span{
+    color:#F27609;
+    display: block;
+}
+
+
+/*Formatação das margens das páginas portifólio e contato */
+
+.margem {
+    padding: 80px 180px 80px 100px;
+}
+.margem div{
+  background: white;
+  display:inline-block;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.margem h2{
+  font-size: 25px;
+  color: orange;
+}
+/*---- Efeito Filter Blur--------*/
+#foto img{
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  }
+  #foto img:hover{
+      -webkit-filter: blur(5px);
+      filter: blur(5px);opacity:0;
+      opacity:1;
+  }
+/*------ Efeito Scale------*/
+
+#foto1 img{
+    width: 400px;
+    transition: all 0.5s;
+   cursor: pointer;
+}
+
+#foto1 img:hover{
+  -webkit-transform: scale(1.5);
+ transform: scale(1.5);
+}
+
+/*------ Drop Shadow------*/
+#foto2 img{
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#foto2 img:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/*------ Efeitos Juntos (menos o BLUR)------*/
+#foto3 img{
+    width: 400px;
+    transition: all .5s;
+   border: 10px solid #eeeeee;
+}
+
+#foto3 img:hover{
+  order: 10px solid #781f40;
+    border-radius: 50%;
+    -webkit-filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+    -webkit-transform: rotateZ(-360deg) scale(1.5);
+    transform: rotateZ(-360deg) scale(1.5);
+}
+/*------ zoom com mouse sobre a imagem 2 ------*/
+
+#foto4 img {
+	width: 400px;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+  bottom: 0;
+}
+
+#foto4 img:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+#comentario2 {
+  overflow: hidden;
+	position: relative;
+  padding-top:-1px;
+  text-align: center;
+  bottom: 50px;
+  padding:0px;
+  color:orange;
+  opacity:0;
+	 width:400px;
+	font-weight: 700;
+	text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  line-height:50px;
+  display: block;
+  transition: opacity .2s linear;
+  background-color:rgba(0,0,0,.1);
+}
+#foto:hover #comentario2{
+ opacity:1;
+}
+
+
+#comentario{
+  position: relative;
+  top: -114px;
+  text-align:center;
+  bottom: 0px;
+  padding:0px;
+  line-height:50px;
+  color:orange;
+  display: block;
+  width:400px;
+  opacity:0;
+  transition: opacity .2s linear;
+  background-color:rgba(0,0,0,.2);
+  font-weight: 700;
+	text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  line-height:50px;
+  overflow: hidden;
+}
+#foto4:hover #comentario{
+ opacity:1;
+}
+ #foto:hover #comentario{
+  opacity:1;
+}
+
+
+
+.caminho{
+    list-style:nome;
+    padding-left:0;
+    color:grey;
+}
+
+.caminho li{
+    display: inline-block;
+}
+.caminho ion-icon{
+    width: 30px;
+    height: 30px;
+    color:#590202;
+}
+h1{
+    color : white;
+    font-weight: normal;
+    }
+
+h2{
+    color: white;
+    font-size:16px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 40px;
+    }
+
+h3{
+    color: #f27629;
+    font-size:12px;
+    text-transform: uppercase;
+    }
